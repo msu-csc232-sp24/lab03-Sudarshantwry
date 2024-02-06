@@ -18,7 +18,7 @@
 #define TRUE 1
 #define EXECUTE_BLOCK FALSE
 
-#define FINISHED_PART_1 FALSE
+#define FINISHED_PART_1 TRUE
 #define FINISHED_PART_2 FALSE
 #define FINISHED_PART_3 FALSE
 
@@ -62,16 +62,34 @@ namespace csc232
 {
 #if FINISHED_PART_1
     // TODO: Task 1 - Declare your Dog interface below (but before the #endif)
+    class Dog{
+
+        public:
+
+        virtual std::string speak() const = 0;
+
+        virtual void sit() const = 0;
+
+        virtual ~Dog() = default;
+
+    };
 
 #endif // FINISHED_PART_1
 
 #if FINISHED_PART_2
     // TODO: Task 2.a.1 - Declare your Yorkie class for Task 2a below
+    class Yorkie : public Dog
+    {
 
+        
+        
+        void sit() const override;
+
+    }
     // TODO: Task 2.a.2 - Add your Yorkie definition below
-
+    public: Yorkie(const std:: string& dogs_name);
     // TODO: Task 2.b.1 - Declare your GreatDaehn class for Task 2b below
-
+    std::string speak() const override;
     // TODO: Task 2.b.2 - Add your GreatDaehn definition below (before the #endif)
 
 #endif // FINISHED_PART_2
