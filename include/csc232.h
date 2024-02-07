@@ -112,7 +112,6 @@ namespace csc232
     std::cout << "A GreatDaehn named " << name << " just sat down." << std::endl;
 
 #endif // FINISHED_PART_2
-cmake --build ./build
     // DO NOT Modify anything below this line
 
     /**
